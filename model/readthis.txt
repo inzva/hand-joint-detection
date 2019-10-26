@@ -1,0 +1,7 @@
+put the keypoint detector model's weight files here.
+
+they should be named as:
+
+cpm_hand.data-00000-of-00001
+cpm_hand.index
+cpm_hand.meta
