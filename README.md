@@ -1,5 +1,7 @@
 # hand-joint-detection
 
+Check our presentation: https://docs.google.com/presentation/d/1rw3Gm_fOz8XKUeUcYJ1HeNCRx0UVpKuhUmYiSOqp7GI/edit?usp=sharing
+
 #### Disclaimer: This repo is work in progress. Feel free to open issues. We are open to suggestions.
 
 The project aims on detecting hand joint locations and classify gesture to take various actions on the OS, such as moving the mouse pointer.
