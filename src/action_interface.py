@@ -1,14 +1,5 @@
-#import win32api, win32con
-#print(pyautogui.size())
-
 import pyautogui
 
-'''
-def click(x,y):
-    win32api.SetCursorPos((x,y))
-    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
-    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,x,y,0,0)
-'''
 
 class Actor():
 
@@ -17,9 +8,6 @@ class Actor():
   def get_encs(self,prediction):
     active_encoding = str(prediction)
     return active_encoding
-
-
-
 
   def act(self,active_encoding):
 
@@ -52,37 +40,8 @@ class Actor():
 
         else:
             print('Error')
-
-
+        
   def test_action(self,prediction):
       active_encoding = self.get_encs(prediction)
       self.act(active_encoding)
       return
-
-
-
-
-#commands coming from the network
-"""
-predictions
-
-12 gesture
-
-##gestures
-
-''
-
-s_prediction = str(prediction)
-
-
-
-application
-
-action interface
-
-predictive model
-
-
-
-
-"""
