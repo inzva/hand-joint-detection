@@ -1,4 +1,4 @@
-put the keypoint detector model's weight files here.
+put the keypoint detector model's weight files under "keypoint" folder.
 
 you can download them here:
 https://drive.google.com/drive/folders/1lgXJ2y4BMbLYI-TCR5zGUUxxEjwGs9Ls?usp=sharing

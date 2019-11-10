@@ -4,6 +4,7 @@ import pickle
 
 
 class CPM_Model():
+    
     def __init__(self, input_size, heatmap_size, stages, joints, img_type='RGB', is_training=True):
         self.stages = stages
         self.stage_heatmap = []

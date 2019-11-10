@@ -1,8 +1,9 @@
-import numpy as np
 import cv2
+import numpy as np
 
 
 class SelfTracker(object):
+
     def __init__(self, img_shape, model_input_size):
         self.img_shape = img_shape
         self.loss_track = False
@@ -17,7 +18,6 @@ class SelfTracker(object):
         self.alpha = 0.2
         self.input_crop_ratio = 1.0
         self.input_size = float(model_input_size)
-
 
     def tracking_by_joints(self, full_img, joint_detections=None):
         if self.loss_track or joint_detections is None:
@@ -43,7 +43,6 @@ class SelfTracker(object):
             pad_size = max(resize_img.shape[0], resize_img.shape[1])
             return self._pad_image(resize_img, pad_size)
 
-
     def _resize_image(self, cropped_img, size):
         h, w, _ = cropped_img.shape
         if h > w:
@@ -53,14 +52,12 @@ class SelfTracker(object):
             scale = size / w
             return cv2.resize(cropped_img, None, fx=scale, fy=scale)
 
-
     def _crop_image(self, full_img, center, size):
         h_offset = size[0] % 2
         w_offset = size[1] % 2
         self.bbox = [max(0, center[0]-size[0]//2), min(self.img_shape[0], center[0]+size[0]//2+h_offset),
                 max(0, center[1]-size[1]//2), min(self.img_shape[1], center[1]+size[1]//2+w_offset)]
         return full_img[self.bbox[0]:self.bbox[1], self.bbox[2]:self.bbox[3], :]
-
 
     def _pad_image(self, img, size):
         h, w, _ = img.shape
