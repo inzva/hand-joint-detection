@@ -5,4 +5,4 @@ Pillow==6.2.1
 PyAutoGUI==0.9.48
 scikit-learn==0.21.3
 scipy==1.3.1
-tensorflow==1.15.0
+tensorflow==2.3.1
