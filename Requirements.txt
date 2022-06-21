@@ -1,5 +1,5 @@
 Keras==2.3.1
-numpy==1.17.3
+numpy==1.22.0
 opencv-python==4.1.1.26
 Pillow==6.2.1
 PyAutoGUI==0.9.48
